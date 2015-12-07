@@ -14,14 +14,15 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.bmp"
         ],
         "exclude": [
           "**/obj/**"
         ]
       }
     ],
-    "template": "op.html",
-    "dest": "CapsToOpsTest_ATA/v1"
+    "template": "op.html"
   }
 }
