@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "dest": "CapsToOpsTest_ATA\v1",
+    "dest": "CapsToOpsTest_ATA/v1",
     "template": "op.html"
   }
 }
