@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA Health Center
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Health Center
 The ATA Health Center lets you know how your ATA service is performing and alerts you to problems.
 
 ## Working with the ATA Health Center

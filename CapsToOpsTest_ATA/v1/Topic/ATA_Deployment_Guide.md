@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA Deployment Guide
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Deployment Guide
 To deploy ATA, follow these steps:
 
 1. Prepare your network and servers according to the guidelines in [ATA Prerequisites](../Topic/ATA_Prerequisites.md).

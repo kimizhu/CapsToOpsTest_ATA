@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA Pre-Installation Steps
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Pre-Installation Steps
 This section provides information about preinstallation steps that you should take before installing ATA.
 
 - [Configure Port Mirroring](../Topic/Configure_Port_Mirroring.md)

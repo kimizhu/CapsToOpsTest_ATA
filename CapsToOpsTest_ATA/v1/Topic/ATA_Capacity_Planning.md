@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA Capacity Planning
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Capacity Planning
 This topic helps you determine how many ATA servers will be needed to support your network.
 
 ## ATA Center Sizing

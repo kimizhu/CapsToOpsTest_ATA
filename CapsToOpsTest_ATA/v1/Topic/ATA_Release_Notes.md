@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA Release Notes
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Release Notes
 These release notes provide information about known issues in this version of  Advanced Threat Analytics.
 
 ## What's new in this version?

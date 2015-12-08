@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: Validate Port Mirroring
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Validate Port Mirroring
 The following steps walk you through the process for validating that port mirroring is properly configured. For ATA to work properly, the ATA Gateway must be able to see the traffic to and from the domain controller. The main data source used by ATA is deep packet inspection of the network traffic to and from your domain controllers. For ATA to see the network traffic, port mirroring needs to be configured. Port mirroring copies the traffic from one port (the source port) to another port (the destination port).
 
 1. Install [Microsoft Network Monitor 3.4](http://www.microsoft.com/download/details.aspx?id=4865) or another network sniffing tool.

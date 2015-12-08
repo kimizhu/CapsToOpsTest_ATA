@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: ATA update to 1.5 migration process
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA update to 1.5 migration process
 ATA version 1.5 provides improved performance, detection, name resolution and database performance.  New monitoring alerts were added as was support for a single domain controller environment.
 
 If you have never installed ATA, install version 1.5 from scratch by [by installing the update from the Microsoft Advanced Threat Analytics site](http://www.microsoft.com/en-us/evalcenter/evaluate-microsoft-advanced-threat-analytics) and following the standard installation procedure described in [Install ATA](../Topic/Install_ATA.md).

@@ -1,3 +1,14 @@
+---
+description: na
+search: na
+title: Working with ATA Detection Settings
+ms.service: na
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Working with ATA Detection Settings
 The **Detection** configuration page lets you set a list of IP addresses and subnets that have unusual circumstances and should be handled slightly differently than other entities on your network.
 
 ## Setting up detection
