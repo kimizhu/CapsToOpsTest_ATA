@@ -6,7 +6,6 @@ ms.service: na
 ms.tgt_pltfrm: na
 ms.topic: article
 update_date: 2/8/2015
-author: jasoz@microsoft.com
 ---
 # ATA Architecture
 The Advanced Threat Analytics architecture is detailed in this diagram:
