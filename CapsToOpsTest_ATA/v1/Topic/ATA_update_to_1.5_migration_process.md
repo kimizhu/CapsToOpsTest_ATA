@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: na
 ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: fb65eb41-b215-4530-93a2-0b8991f4e980
 ---
 # ATA update to 1.5 migration process
 ATA version 1.5 provides improved performance, detection, name resolution and database performance.  New monitoring alerts were added as was support for a single domain controller environment.

@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: na
 ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: e1954834-ff49-4ac1-b78c-06693569abff
 ---
 # ATA FAQ
 This section provides answers to frequently asked questions about Microsoft Advanced Threat Analytics.

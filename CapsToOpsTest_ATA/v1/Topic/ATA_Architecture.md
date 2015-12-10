@@ -5,7 +5,9 @@ title: ATA Architecture
 ms.service: na
 ms.tgt_pltfrm: na
 ms.topic: article
-update_date: 2/8/2015
+ms.date: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: 892b16d2-58a6-49f9-8693-1e5f69d8299c
 ---
 # ATA Architecture
 The Advanced Threat Analytics architecture is detailed in this diagram:

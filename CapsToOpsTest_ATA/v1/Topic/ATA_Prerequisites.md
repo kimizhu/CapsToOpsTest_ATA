@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: na
 ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
 ---
 # ATA Prerequisites
 This article describes the requirements for a successful deployment of ATA in your environment.

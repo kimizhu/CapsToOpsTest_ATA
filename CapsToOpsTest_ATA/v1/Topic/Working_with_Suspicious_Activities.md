@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: na
 ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: 44d7c899-816c-4f7f-91d3-84a09d291a24
 ---
 # Working with Suspicious Activities
 This topic explains the basics of how to work with Advanced Threat Analytics.

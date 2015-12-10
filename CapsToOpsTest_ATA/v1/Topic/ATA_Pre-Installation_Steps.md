@@ -7,6 +7,7 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.date: na
 ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+capscontentguid: 559cf8c9-8511-42ad-b950-8c95c152f240
 ---
 # ATA Pre-Installation Steps
 This section provides information about preinstallation steps that you should take before installing ATA.
