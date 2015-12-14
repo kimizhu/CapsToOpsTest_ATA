@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: ATA database maintenance
 search: na
-title: ATA database maintenance
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
+ms.prod: identity-ata
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: 736f9279-a047-415c-b3eb-c63ab8725ec0
+ms.assetid: 736f9279-a047-415c-b3eb-c63ab8725ec0
 ---
 # ATA database maintenance
 This topic will provide information on maintaining your ATA databases.

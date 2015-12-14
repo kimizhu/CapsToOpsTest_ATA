@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: Pre-Installation Steps
 search: na
-title: Pre-Installation Steps
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: 12bbdcc0-9ac2-4bad-8f26-06ee498351fa
+ms.assetid: 12bbdcc0-9ac2-4bad-8f26-06ee498351fa
+robots: noindex,nofollow
 ---
 # Pre-Installation Steps
 This article describes the requirements for a successful deployment of ATA in your environment.

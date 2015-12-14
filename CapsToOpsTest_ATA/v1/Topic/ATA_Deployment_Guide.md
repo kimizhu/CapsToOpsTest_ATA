@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: ATA Deployment Guide
 search: na
-title: ATA Deployment Guide
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
+ms.prod: identity-ata
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: f9ab356c-4c1c-444c-b221-2451aaebc58b
+ms.assetid: f9ab356c-4c1c-444c-b221-2451aaebc58b
 ---
 # ATA Deployment Guide
 To deploy ATA, follow these steps:

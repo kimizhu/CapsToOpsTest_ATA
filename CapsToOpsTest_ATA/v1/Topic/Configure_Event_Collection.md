@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: Configure Event Collection
 search: na
-title: Configure Event Collection
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
+ms.prod: identity-ata
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
+ms.assetid: 3f0498f9-061d-40e6-ae07-98b8dcad9b20
 ---
 # Configure Event Collection
 To enhance ATA detection of Pass-the-Hash, ATA needs Windows Event log ID 4776. This can be forwarded to the ATA Gateway in one of two ways, by configuring the ATA Gateway to listen for SIEM events or by [Configuring Windows Event Forwarding](#ATA_event_WEF).

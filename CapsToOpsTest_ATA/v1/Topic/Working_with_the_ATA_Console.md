@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: Working with the ATA Console
 search: na
-title: Working with the ATA Console
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
+ms.prod: identity-ata
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: 1bf264d9-9697-44b5-9533-e1c498da4f07
+ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
 ---
 # Working with the ATA Console
 This section describes the ATA Console.

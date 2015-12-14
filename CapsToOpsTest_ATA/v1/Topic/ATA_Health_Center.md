@@ -1,13 +1,14 @@
 ---
 description: na
+keywords: na
+pagetitle: ATA Health Center
 search: na
-title: ATA Health Center
-ms.service: na
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.date: na
+ms.prod: identity-ata
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.date: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
-capscontentguid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
+ms.assetid: d6c783b2-46c5-4211-b21a-d6b17f08d03d
 ---
 # ATA Health Center
 The ATA Health Center lets you know how your ATA service is performing and alerts you to problems.
