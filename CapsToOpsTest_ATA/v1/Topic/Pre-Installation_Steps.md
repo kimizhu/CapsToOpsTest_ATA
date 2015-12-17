@@ -3,11 +3,11 @@ description: na
 keywords: na
 pagetitle: Pre-Installation Steps
 search: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
 ms.date: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 12bbdcc0-9ac2-4bad-8f26-06ee498351fa
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
 robots: noindex,nofollow
 ---
 # Pre-Installation Steps

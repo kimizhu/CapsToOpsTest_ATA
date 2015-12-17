@@ -3,12 +3,16 @@ description: na
 keywords: na
 pagetitle: ATA Capacity Planning
 search: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.custom: 
+  - ATA
 ms.date: na
 ms.prod: identity-ata
+ms.technology: 
+  - security
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 279d79f2-962c-4c6f-9702-29744a5d50e2
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
 ---
 # ATA Capacity Planning
 This topic helps you determine how many ATA servers will be needed to support your network.

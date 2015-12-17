@@ -3,12 +3,16 @@ description: na
 keywords: na
 pagetitle: Install ATA
 search: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.custom: 
+  - ATA
 ms.date: na
 ms.prod: identity-ata
+ms.technology: 
+  - security
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3715b69e-e631-449b-9aed-144d0f9bcee7
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
 ---
 # Install ATA
 The following are the steps required to get ATA deployed, configured, and running.

@@ -3,12 +3,16 @@ description: na
 keywords: na
 pagetitle: ATA FAQ
 search: na
-ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+ms.custom: 
+  - ATA
 ms.date: na
 ms.prod: identity-ata
+ms.technology: 
+  - security
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e1954834-ff49-4ac1-b78c-06693569abff
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
 ---
 # ATA FAQ
 This section provides answers to frequently asked questions about Microsoft Advanced Threat Analytics.
