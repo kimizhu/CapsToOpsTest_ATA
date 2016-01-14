@@ -1,11 +1,11 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <BuildTaskPackage>docfx.msbuild</BuildTaskPackage>
+    <BuildTaskPackage>opbuild</BuildTaskPackage>
     <BuildTaskProjectPath>build/docfx.msbuild.targets</BuildTaskProjectPath>
     <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
     <OutputFolder Condition="'$(OutputFolder)' == '' ">$(MSBuildThisFileDirectory)_site</OutputFolder>
     <PreviewTemplateName Condition="'$(PreviewTemplateName)' == '' ">msdn.html</PreviewTemplateName>
-    <OPTemplateName Condition="'$(OPTemplateName)' == '' ">op.html</OPTemplateName>
+    <OPTemplateName Condition="'$(OPTemplateName)' == '' ">docs.html</OPTemplateName>
     <LogOutputFolder Condition="'$(LogOutputFolder)' == ''">$(MSBuildThisFileDirectory)\log\</LogOutputFolder>
     <LogFile Condition="'$(LogFile)' == ''">$(LogOutputFolder)\report.txt</LogFile>
     <LogLevel Condition=" '$(LogLevel)' == '' ">Verbose</LogLevel>
@@ -30,7 +30,7 @@
     <Message Text="Use latest package version: $(UseLatestPackage)"/>
 
     <!-- Get Latest version from nuget server if latest version is needed -->
-    <XmlPeek Condition="$(UseLatestPackage)" Query="//packageSources/add[@key='Azure']/@value" XmlInputPath="$(ToolsFolder)NuGet\NuGet.config">
+    <XmlPeek Condition="$(UseLatestPackage)" Query="//packageSources/add[@key='op.myget.dev']/@value" XmlInputPath="$(ToolsFolder)NuGet\NuGet.config">
       <Output PropertyName="NugetSource" TaskParameter="Result"/>
     </XmlPeek>
     <Message Condition="$(UseLatestPackage)" Text="NugetSource=$(NugetSource)"/>
@@ -79,7 +79,19 @@
   <!-- Build Target -->
   <Target DependsOnTargets="RestorePackages" Name="Build">
   <!-- <Target Name="Build"> -->
-    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(OutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel)"/>
+
+    <PropertyGroup>
+      <DocfxFolder>$([System.IO.Path]::GetDirectoryName(%(DocfxConfigFile.FullPath)))</DocfxFolder>
+      <DocfxRelativeFolder>$([MSBuild]::MakeRelative($(MSBuildThisFileDirectory), $(DocfxFolder)))</DocfxRelativeFolder>
+      <TempOutputFolder>$(DocfxFolder)\obj\_temp_</TempOutputFolder>
+    </PropertyGroup>
+
+    <Exec Command="rd /s /q &quot;$(DocfxFolder)\_themes&quot;" IgnoreExitCode="true"/>
+    <Exec Command="robocopy &quot;$(PackageRootFolder)tools\DocPacker\_themes&quot; &quot;$(DocfxFolder)\_themes&quot; /mir" IgnoreExitCode="true"/>
+
+    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(TempOutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel)"/>
+
+    <Exec Command="&quot;$(PackageRootFolder)tools\DocPacker\DocPacker.exe&quot; -r &quot;$(TempOutputFolder)&quot; -o &quot;$(OutputFolder)\$(DocfxRelativeFolder)&quot;"/>
   </Target>
   <Target DependsOnTargets="Build" Name="Generate">
     <MSBuild Projects="$(BuildProjectPath)" Targets="DocPreview" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(OutputFolder);IsServing=False;DocTemplate=$(PreviewTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel)"/>

@@ -16,14 +16,25 @@
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
-          "**/*.bmp"
+          "**/*.bmp",
+          "**/*_themes/**"
         ],
         "exclude": [
           "**/obj/**"
         ]
       }
     ],
-    "dest": "CapsToOpsTest_ATA/v1",
-    "template": "op.html"
-  }
+    "dest": "_site",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "_op_accessToken": "726ffcbc4b1cdb469071ed639604690e0060db0f",
+      "breadcrumb_path": "/breadcrumb.json"
+    }
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/ATA"
 }

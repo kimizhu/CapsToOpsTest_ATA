@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: Modifying ATA Configuration
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: bcf0f7d3-8027-45c0-8002-19f71fcb30a6
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Modifying ATA Configuration
 If you need to update or change your configuration after initial installation and deployment of ATA, use this topic for guidance before modifying the following:
 
 - [Modifying the IP address used by the ATA Center server](#ATA_modify_centerIP)

@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: Configure Port Mirroring
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: cdaddca3-e26e-4137-b553-8ed3f389c460
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Configure Port Mirroring
 The ATA Gateway needs to see all the network traffic to and from each domain controller being monitored. Configure **port mirroring** for each domain controller to be monitored, as the **source** of the network traffic. Typically, you will need to work with the networking or virtualization team to configure port mirroring.
 
 The main data source used by ATA is deep packet inspection of the network traffic to and from your domain controllers. For ATA to see the network traffic, port mirroring needs to be configured. Port mirroring copies the traffic on one port, known as the source port, to another port, known as the destination port.  ATA works with most solutions that can mirror traffic - if the traffic can be port mirrored to ATA, it can be used to analyze threats to your system. To configure port mirroring, refer to your vendor's documentation.
