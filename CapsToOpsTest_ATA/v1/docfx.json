@@ -28,7 +28,9 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/breadcrumb.json"
+      "breadcrumb_path": "/breadcrumb.json",
+      "_op_clientId": "7decdab5f6801e75e1d5",
+      "_op_clientSecret": "a316d3df107875b2e750828b352b5d6e82c69ddc"
     }
   },
   "render": {
