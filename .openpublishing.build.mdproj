@@ -89,7 +89,7 @@
     <Exec Command="rd /s /q &quot;$(DocfxFolder)\_themes&quot;" IgnoreExitCode="true"/>
     <Exec Command="robocopy &quot;$(PackageRootFolder)tools\DocPacker\_themes&quot; &quot;$(DocfxFolder)\_themes&quot; /mir" IgnoreExitCode="true"/>
 
-    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(TempOutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel)"/>
+    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(TempOutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel);GlobalMetadata=$(GlobalMetadata)"/>
 
     <Exec Command="&quot;$(PackageRootFolder)tools\DocPacker\DocPacker.exe&quot; -r &quot;$(TempOutputFolder)&quot; -o &quot;$(OutputFolder)\$(DocfxRelativeFolder)&quot;"/>
   </Target>
