@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: Microsoft Advanced Threat Analytics
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: a315cf03-c5a3-4ecb-a0f8-4d3e322e6ad1
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Microsoft Advanced Threat Analytics
 Microsoft Advanced Threat Analytics (ATA) is an on-premises product that helps IT security professionals protect their enterprise from advanced targeted attacks by automatically analyzing, learning, and identifying normal and abnormal behavior among entities (users, devices, and resources).  ATA also helps identify known malicious attacks, security issues and risks using world-class, cutting edge research in behavioral analytics to help enterprises identify security breaches before they cause damage.
 
 ATA runs in the background and automatically analyzes, learns, and identifies normal behavior on your network, alerting you to possible security concerns, including:

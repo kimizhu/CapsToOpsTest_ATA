@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: Working with the ATA Console
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 1bf264d9-9697-44b5-9533-e1c498da4f07
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# Working with the ATA Console
 This section describes the ATA Console.
 
 ## Enable access to the ATA Console

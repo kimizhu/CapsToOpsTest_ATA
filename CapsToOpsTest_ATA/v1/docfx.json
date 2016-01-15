@@ -16,14 +16,26 @@
           "**/*.png",
           "**/*.jpg",
           "**/*.gif",
-          "**/*.bmp"
+          "**/*.bmp",
+          "**/*_themes/**"
         ],
         "exclude": [
           "**/obj/**"
         ]
       }
     ],
-    "dest": "CapsToOpsTest_ATA/v1",
-    "template": "op.html"
-  }
+    "dest": "_site",
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "_op_clientId": "7decdab5f6801e75e1d5",
+      "_op_clientSecret": "a316d3df107875b2e750828b352b5d6e82c69ddc",
+      "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json"
+    }
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/ATA"
 }

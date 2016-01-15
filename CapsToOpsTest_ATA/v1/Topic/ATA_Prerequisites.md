@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: ATA Prerequisites
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: a5f90544-1c70-4aff-8bf3-c59dd7abd687
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Prerequisites
 This article describes the requirements for a successful deployment of ATA in your environment.
 
 ATA is comprised of two components, the ATA Center and the ATA Gateway. For more information about the ATA components, see [ATA Architecture](../Topic/ATA_Architecture.md).

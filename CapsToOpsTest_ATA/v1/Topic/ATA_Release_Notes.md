@@ -1,3 +1,20 @@
+---
+description: na
+keywords: na
+pagetitle: ATA Release Notes
+search: na
+ms.custom: 
+  - ATA
+ms.date: na
+ms.prod: identity-ata
+ms.technology: 
+  - security
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 606ab8db-3c42-4d99-90dc-c54a76f52d13
+ms.author: 5f6e9ed0-302d-496f-873c-7a2b94e50410
+---
+# ATA Release Notes
 These release notes provide information about known issues in this version of  Advanced Threat Analytics.
 
 ## What's new in this version?
