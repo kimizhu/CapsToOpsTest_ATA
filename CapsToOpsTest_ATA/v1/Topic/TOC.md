@@ -20,5 +20,5 @@
 #### [Working with ATA Detection Settings](Working_with_ATA_Detection_Settings.md)
 #### [ATA Database Management](ATA_Database_Management.md)
 #### [Manage Telemetry Settings](Manage_Telemetry_Settings.md)
-### [ATA FAQ](ATA_FAQ.md)
 ### [ATA Frequently Asked Questions](ATA_Frequently_Asked_Questions.md)
+#### [ATA FAQ](ATA_FAQ.md)
