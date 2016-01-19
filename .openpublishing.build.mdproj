@@ -5,7 +5,6 @@
     <ToolsFolder>$(MSBuildThisFileDirectory)Tools\</ToolsFolder>
     <OutputFolder Condition="'$(OutputFolder)' == '' ">$(MSBuildThisFileDirectory)_site</OutputFolder>
     <PreviewTemplateName Condition="'$(PreviewTemplateName)' == '' ">msdn.html</PreviewTemplateName>
-    <OPTemplateName Condition="'$(OPTemplateName)' == '' ">docs.html</OPTemplateName>
     <LogOutputFolder Condition="'$(LogOutputFolder)' == ''">$(MSBuildThisFileDirectory)\log\</LogOutputFolder>
     <LogFile Condition="'$(LogFile)' == ''">$(LogOutputFolder)\report.txt</LogFile>
     <LogLevel Condition=" '$(LogLevel)' == '' ">Verbose</LogLevel>
@@ -84,12 +83,13 @@
       <DocfxFolder>$([System.IO.Path]::GetDirectoryName(%(DocfxConfigFile.FullPath)))</DocfxFolder>
       <DocfxRelativeFolder>$([MSBuild]::MakeRelative($(MSBuildThisFileDirectory), $(DocfxFolder)))</DocfxRelativeFolder>
       <TempOutputFolder>$(DocfxFolder)\obj\_temp_</TempOutputFolder>
+      <DocParameters Condition="'$(GlobalMetatadataFile)' != '' ">--globalMetadataFile &quot;$(GlobalMetatadataFile)&quot; </DocParameters>
     </PropertyGroup>
 
     <Exec Command="rd /s /q &quot;$(DocfxFolder)\_themes&quot;" IgnoreExitCode="true"/>
     <Exec Command="robocopy &quot;$(PackageRootFolder)tools\DocPacker\_themes&quot; &quot;$(DocfxFolder)\_themes&quot; /mir" IgnoreExitCode="true"/>
 
-    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(TempOutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel);GlobalMetadata=$(GlobalMetadata);GlobalMetadataFile=$(GlobalMetadataFile)"/>
+    <MSBuild Projects="$(BuildProjectPath)" Targets="DocBuild" Properties="DocfxConfigFile=%(DocfxConfigFile.FullPath);OutputFolder=$(TempOutputFolder);DocTemplate=$(OPTemplateName);LogFile=$(LogFile);LogLevel=$(LogLevel);DocParameters=$(DocParameters)"/>
 
     <Exec Command="&quot;$(PackageRootFolder)tools\DocPacker\DocPacker.exe&quot; -r &quot;$(TempOutputFolder)&quot; -o &quot;$(OutputFolder)\$(DocfxRelativeFolder)&quot;"/>
   </Target>
