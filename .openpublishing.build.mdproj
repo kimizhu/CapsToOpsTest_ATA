@@ -83,7 +83,7 @@
       <DocfxFolder>$([System.IO.Path]::GetDirectoryName(%(DocfxConfigFile.FullPath)))</DocfxFolder>
       <DocfxRelativeFolder>$([MSBuild]::MakeRelative($(MSBuildThisFileDirectory), $(DocfxFolder)))</DocfxRelativeFolder>
       <TempOutputFolder>$(DocfxFolder)\obj\_temp_</TempOutputFolder>
-      <DocParameters Condition="'$(GlobalMetatadataFile)' != '' ">--globalMetadataFile &quot;$(GlobalMetatadataFile)&quot; </DocParameters>
+      <DocParameters Condition="'$(GlobalMetadataFile)' != '' ">--globalMetadataFile &quot;$(GlobalMetadataFile)&quot; </DocParameters>
     </PropertyGroup>
 
     <Exec Command="rd /s /q &quot;$(DocfxFolder)\_themes&quot;" IgnoreExitCode="true"/>
