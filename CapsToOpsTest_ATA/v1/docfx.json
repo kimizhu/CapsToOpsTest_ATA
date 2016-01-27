@@ -28,7 +28,8 @@
     "template": "docs.html",
     "globalMetadata": {
       "layout": "Conceptual",
-      "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json"
+      "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json",
+      "ms.locale": "en-us"
     }
   },
   "render": {
