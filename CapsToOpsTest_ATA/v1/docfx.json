@@ -17,10 +17,12 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
-          "**/*_themes/**"
+          "_themes/**"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/obj/**",
+          "_themes/**/*.exe",
+          "_themes/**/*.dll"
         ]
       }
     ],
