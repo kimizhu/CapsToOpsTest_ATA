@@ -1,5 +1,5 @@
 {
-  "build_entry_point": "",
+  "build_entry_point": "docs.ps1",
   "docsets_to_publish": [
     {
       "docset_name": "CapsToOpsTest_ATA",
@@ -14,5 +14,6 @@
   ],
   "notification_subscribers": [
     "jasoz@microsoft.com"
-  ]
+  ],
+  "package_version": "1.5-alpha-071-ge98a0d0"
 }
