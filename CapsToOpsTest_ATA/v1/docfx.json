@@ -21,8 +21,7 @@
         ],
         "exclude": [
           "**/obj/**",
-          "_themes/**/*.exe",
-          "_themes/**/*.dll"
+          "_themes/DocPacker/**"
         ]
       }
     ],
