@@ -1,4 +1,4 @@
 [submodule "imported shared themes"]
 	path = CapsToOpsTest_ATA/v1/_themes
-	url = https://github.com/JialinXin/DocsThemes
+	url = https://github.com/Microsoft/templates.docs.msft
 	branch = live
