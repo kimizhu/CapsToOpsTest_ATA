@@ -1,0 +1,38 @@
+---
+- uid: theme.light
+  name: Light
+- uid: theme.dark
+  name: Dark
+- uid: theme.hotdog
+  name: Hot Dog
+- uid: theme.2columns
+  name: 2 Columns
+- uid: theme.3columns
+  name: 3 Columns
+- uid: edit
+  name: Edit
+- uid: view.source
+  name: View.Source
+- uid: share
+  name: Share
+- uid: twitter
+  name: Twitter
+- uid: facebook
+  name: Facebook
+- uid: slack
+  name: Slack
+- uid: platform
+  name: Platform
+- uid: language
+  name: Language
+- uid: theme
+  name: Theme
+- uid: options
+  name: Options
+- uid: more
+  name: More
+- uid: author.name
+  name: Author Name
+- uid: in.this.article
+  name: In this article
+---
