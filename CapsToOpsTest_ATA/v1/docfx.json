@@ -17,17 +17,25 @@
           "**/*.jpg",
           "**/*.gif",
           "**/*.bmp",
-          "**/*.PNG",
-          "**/*.JPG",
-          "**/*.GIF",
-          "**/*.BMP"
+          "_themes/**"
         ],
         "exclude": [
-          "**/obj/**"
+          "**/obj/**",
+          "_themes/DocPacker/**"
         ]
       }
     ],
     "dest": "CapsToOpsTest_ATA/v1",
-    "template": "op.html"
-  }
+    "template": "docs.html",
+    "globalMetadata": {
+      "layout": "Conceptual",
+      "breadcrumb_path": "/CapsToOpsTest_EMS/v1/toc.json",
+      "ms.locale": "en-us"
+    }
+  },
+  "render": {
+    "theme": "hyde",
+    "dest": "_output"
+  },
+  "basepath": "/ATA"
 }

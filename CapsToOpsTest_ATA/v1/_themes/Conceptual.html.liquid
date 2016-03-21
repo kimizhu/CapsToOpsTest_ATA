@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ms.pagetype" content="conceptual" />
+    <meta name="ms.sitename" content="DOCS" />
+    {{ metadata }}
+    <title>{{ page.title }}</title>
+    {% style _themes/css/conceptual.css %}
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    <div class="container" ms.pgarea="body">
+
+      <aside id="social" ms.cmpgrp="social">
+        <ol class="social-actions">
+          <li class="menu-theme">
+            <div class="dropdown-container">
+              <div class="dropdown">
+                <select id="theme-selector">
+                  <option value="">{% loc theme.light %}</option>
+                  <option value="theme-night">{% loc theme.dark %}</option>
+                  <option value="theme-hot-dog">{% loc theme.hotdog %}</option>
+                </select>
+              </div>
+            </div>
+          </li>
+          <li><a href="#comments-container" class="button button-small"><span class="icon icon-comments"></span> {% loc comments %}</a></li>
+          <li><a href="{{ page.content_git_url }}" class="button button-small"><span class="icon icon-edit"></span> {% loc edit %}</a></li>
+          <li><a href="#" class="button button-small sharebutton"><span class="icon icon-share"></span> {% loc share %}</a></li>
+          <div class="share-container">
+            <li><a href="" class="share-twitter"><i class="fa fa-fw">&#xf099;</i> {% loc twitter %}</a></li>
+            <li><a href="" class="share-facebook"><i class="fa fa-fw">&#xf09a;</i> {% loc facebook %}</a></li>
+            <!--<li><a href="" class="share-slack"><i class="fa fa-fw">&#xf198;</i> {% loc slack %}</a></li>-->
+          </div>
+        </ol>
+
+        <div id="menu-expand">
+          <h6><span id="menu-expand-icon">+ </span>Options</h6>
+        </div>
+      </aside>
+      
+      <div id="toc" ms.cmpgrp="left toc">
+        <nav id="sidebar"></nav>
+      </div>
+      
+      <div id="menu-nav" class="dropdown-container">
+        <div class="dropdown dropdown-full mobilenavi">
+          <select>
+          </select>
+        </div>
+      </div>
+
+      <div id="main">
+        {{ page._op_rawTitle }}
+        <div id="metadata" ms.cmpgrp="page info">
+          <a href="{{ page._op_gitContributorInformation.author.profile_url }}" class="avatar"><span class="author-name" style="background-image: url({{ page._op_gitContributorInformation.author.profile_url }}.png)" alt="{% loc author.name %}"></span></a>
+          <div class="info">
+            <span class="name"><a href="{{ page._op_gitContributorInformation.author.profile_url }}">{{ page._op_gitContributorInformation.author.display_name}}</a></span>
+            <div class="meta">
+              <time datetime="" class="date">{{ page._op_gitContributorInformation.update_at }}</time>
+              <time datetime="" class="reading-time">{% if page._op_wordCount < 200 %}Less than 1{% else %}{{ page._op_wordCount | divided_by: 200 }}{% endif %} min</time>
+              <ul class="contributors">
+                {% for contributor in page._op_gitContributorInformation.contributors %}
+                <li><a href="{{ contributor.profile_url }}"><span style="background-image: url({{ contributor.profile_url }}.png)" alt="{{ contributor.display_name }}" class="contributor-avatar"></span></a></li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div> 
+        </div>
+
+        <aside class="toc" ms.cmpgrp="intopic toc">
+          <h5>{% loc in.this.article %}</h5>
+        </aside>
+
+        {{ content }}
+      </div>
+    </div>
+
+    <div id="openFeedbackContainer" class="openfeedback-container"></div>
+    <div class="container">
+        <div id="comments-container"> </div>
+    </div>
+    
+    {% include footer.html %}
+
+    {% js _themes/javascript/conceptual.js %}
+  </body>
+</html>

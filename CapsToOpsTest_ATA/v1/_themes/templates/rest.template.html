@@ -1,0 +1,67 @@
+<script type="x-template" id="param">
+    <span v-if="param.isList && !param.isArray"><single-enum-parameter :param="param"></single-enum-parameter>
+        </span>
+    <span v-else>
+        <span v-if="param.isBody||param.isArray">
+            <textarea class='body-textarea' v-bind:class="{ 'required': param.required}" name='{{param.name}}'
+                      id='{{param.valueId}}'>{{param.default}}</textarea>
+        </span>
+        <span v-else>
+            <input class='parameter' v-bind:class="{ 'required': param.required}"
+                   v-bind:minlength="param.required ? 1 : 0"
+                   v-bind:placeholder="param.required ? 'required' :''"
+                   name='{{param.name}}' id='{{param.valueId}}' v-bind:value="param.default"></input>
+        </span>
+    </span>
+</script>
+
+<script type="x-template" id="text-param">
+    <input type="text" value="{{param.default}}"/>
+</script>
+
+<script type="x-template" id="single-enum-param">
+    <select v-bind:value="param.default">
+        <option value=''></option>
+        <option v-for="option in param.allowableValues.values" v-bind:value="option">
+            {{ option }}
+        </option>
+    </select>
+</script>
+
+<script type="x-template" id="params">
+    <form class='sandbox'>
+        <ul class="param-list-group">
+            <li v-for="item in parameters" class="param-list-item">
+                <h3 class="param-list-item-label">
+                    {{item.name}}
+                </h3>
+                <p class="param-list-item-input">
+                    <custom-parameter :param="item"></custom-parameter>
+                </p>
+            </li>
+            <li class="param-list-item">
+                <a v-on:click="submitOperation" class="button button-small"><span class="icon icon-cloud"></span> Try It!</a>
+            </li>
+        </ul>
+
+        <div class="request" v-show="showRequest">
+            <pre><code class="request nohighlight wordbreak"></code></pre>
+        </div>
+        <div class="animation-progress-ring-20x20 progress" v-if="loading"></div>
+        <div class="response" v-show="showResponse">
+            Response
+            <pre><code class="response_body wordbreak" v-bind:class="{ 'json': isJson}">{{sample_response}}</code></pre>
+            <span class="response_header_span" v-show="showResponseHeader">
+                Response Headers
+                <pre><code class="response_headers nohighlight wordbreak"></code></pre>
+                Response Code
+                <pre><code class="response_code nohighlight wordbreak"></code></pre>
+            </span>
+        </div>
+    </form>
+</script>
+
+<script type="x-template" id="rest-form">
+    <rest-api-form :parameters="parameters" :operation_id="operation_id" :sample_response="sample_response"
+                   :swagger_url="swagger_url" :proxy_url="proxy_url"></rest-api-form>
+</script>
