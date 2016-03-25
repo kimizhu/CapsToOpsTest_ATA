@@ -7,24 +7,27 @@
     <meta name="ms.sitename" content="DOCS" />
     {{ metadata }}
     <title>{{ page.title }}</title>
-    {% style _themes/css/restapi.css %}
+    {% style _themes/css/c968aa306f6eb7ab8b4a.restapi.css %}
   </head>
   <body>
 
     {% include header.html %}
 
-    <div id="sidebar" ms.cmpgrp="intopic toc">
-        <nav class="navigation">
-        </nav>
-    </div>
+    <div class="reference">
+      <!-- Toc -->
+      <div id="sidebar" class="reference-toc" ms.cmpgrp="intopic toc">
+          <nav class="navigation"></nav>
+      </div>
 
-    <div id="main" ms.pgarea="body">
-        <article id="main-content">
-            {{ content }}
-        </article>
+      <!-- Content -->
+      <div id="main" class="reference-body" ms.pgarea="body">
+          <article id="main-content" class="reference-content">
+              {{ content }}
+          </article>
+      </div>
     </div>
 
     <div id="openFeedbackContainer" class="openfeedback-container" style="position: absolute;"></div>
-    {% js _themes/javascript/rest.js %}
+    {% js _themes/javascript/c968aa306f6eb7ab8b4a.rest.js %}
   </body>
 </html>

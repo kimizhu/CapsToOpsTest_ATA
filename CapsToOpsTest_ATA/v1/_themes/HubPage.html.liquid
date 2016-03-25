@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="ms.pagetype" content="hubpage" />
+    <meta name="ms.sitename" content="DOCS" />
+    {{ metadata }}
+    <title>{{ page.title }}</title>
+    {% style _themes/css/hubpage.css %}
+  </head>
+  <body>
+
+    {% include header.html %}
+
+    <div class="container" ms.pgarea="body">
+        {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% js _themes/javascript/hubpage.js %}
+  </body>
+</html>
