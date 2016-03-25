@@ -29,7 +29,7 @@ layout: HubPage
     <ol class="carousel">
       <li class="column column-third">
         <a href="/EM/Solutions/mdm-design-considerations-guide">
-          <img src="./Image/mobile_engagement_icon.png" alt="MDM DCG Icon">
+          <img src="../Image/mobile_engagement_icon.png" alt="MDM DCG Icon">
           <div class="content">
             <h4>Mobile Device Management Design Considerations Guide</h4>
           </div>
@@ -37,7 +37,7 @@ layout: HubPage
       </li>
       <li class="column column-third">
         <a href="/active-directory/active-directory-hybrid-identity-design-considerations-overview" target="_blank">
-          <img src="./Image/azure_active_directory_icon.png" alt="Hybrid Identity DCG icon">
+          <img src="../Image/azure_active_directory_icon.png" alt="Hybrid Identity DCG icon">
           <div class="content">
             <h4>Hybrid Identity Design Considerations Guide</h4>
           </div>
@@ -45,7 +45,7 @@ layout: HubPage
       </li>
       <li class="column column-third">
         <a href="/EM/Solutions/BYOD-design-considerations-guide">
-          <img src="./Image/mobile_devices_icon.png" alt="BYOD DCG icon">
+          <img src="../Image/mobile_devices_icon.png" alt="BYOD DCG icon">
           <div class="content">
             <h4>Bring Your Own Device Design Considerations Guide</h4>
           </div>
@@ -53,7 +53,7 @@ layout: HubPage
       </li>
       <li class="column column-third">
         <a href="https://gallery.technet.microsoft.com/Protecting-company-data-2d27c466" title="Protecting company data and email with Intune" target="_blank">
-          <img src="./Image/conditional access_exchange_icon.png" alt="Intune icon">
+          <img src="../Image/conditional access_exchange_icon.png" alt="Intune icon">
           <div class="content">
             <h4>Configure Conditional Access with Intune</h4>
           </div>
@@ -61,7 +61,7 @@ layout: HubPage
       </li>
       <li class="column column-third">
         <a href="/EM/Solutions/Secure-access-to-company-resources-from-any-location-on-any-device">
-          <img src="./Image/intune_byod_icon.png" alt="Intune icon">
+          <img src="../Image/intune_byod_icon.png" alt="Intune icon">
           <div class="content">
             <h4>Securing Access to Company Resources from Any Device</h4>
           </div>
@@ -69,7 +69,7 @@ layout: HubPage
       </li>
       <li class="column column-third">
         <a href="./Solutions/Architecture-guidance-for-protecting-company-email-and-documents">
-          <img src="./Image/conditional access_exchange_icon.png" alt="Intune icon">
+          <img src="../Image/conditional access_exchange_icon.png" alt="Intune icon">
           <div class="content">
             <h4>Protect Company Email &amp; Documents</h4>
           </div>
