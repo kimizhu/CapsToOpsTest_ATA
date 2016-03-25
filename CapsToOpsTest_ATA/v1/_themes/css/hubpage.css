@@ -615,6 +615,7 @@ h1, h2, h3, h4, h5, h6 {
     text-rendering: optimizeLegibility;
     margin-bottom: 0.5em;
     margin-top: 0.25em;
+    word-wrap: break-word;
 }
 
 h1 {
