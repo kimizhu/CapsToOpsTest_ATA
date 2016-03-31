@@ -3,12 +3,6 @@
   name: Light
 - uid: theme.dark
   name: Dark
-- uid: theme.hotdog
-  name: Hot Dog
-- uid: theme.2columns
-  name: 2 Columns
-- uid: theme.3columns
-  name: 3 Columns
 - uid: edit
   name: Edit
 - uid: view.source

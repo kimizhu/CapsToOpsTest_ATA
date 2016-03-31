@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="ms.pagetype" content="conceptual" />
-    <meta name="ms.sitename" content="DOCS" />
     {{ metadata }}
     <title>{{ page.title }}</title>
-    {% style _themes/css/c968aa306f6eb7ab8b4a.conceptual.css %}
+    {% style _themes/css/ccb5d95bcacbe45c0f4d.conceptual.css %}
   </head>
   <body>
 
@@ -23,19 +21,20 @@
                 <select id="theme-selector">
                   <option value="">{% loc theme.light %}</option>
                   <option value="theme-night">{% loc theme.dark %}</option>
-                  <option value="theme-hot-dog">{% loc theme.hotdog %}</option>
                 </select>
               </div>
             </div>
           </li>
           <li><a href="#comments-container" class="button button-small"><span class="icon icon-comments"></span> {% loc comments %}</a></li>
           <li><a href="{{ page.content_git_url }}" class="button button-small"><span class="icon icon-edit"></span> {% loc edit %}</a></li>
-          <li><a href="#" class="button button-small sharebutton"><span class="icon icon-share"></span> {% loc share %}</a></li>
-          <div class="share-container">
-            <li><a href="" class="share-twitter"><i class="fa fa-fw">&#xf099;</i> {% loc twitter %}</a></li>
-            <li><a href="" class="share-facebook"><i class="fa fa-fw">&#xf09a;</i> {% loc facebook %}</a></li>
-            <!--<li><a href="" class="share-slack"><i class="fa fa-fw">&#xf198;</i> {% loc slack %}</a></li>-->
-          </div>
+          <li>
+            <a href="#" class="button button-small sharebutton"><span class="icon icon-share"></span> {% loc share %}</a>
+            <div class="share-container">
+              <div><a href="" class="share-twitter">{% loc twitter %}</a></div>
+              <div><a href="" class="share-facebook">{% loc facebook %}</a></div>
+              <!--<div><a href="" class="share-slack">{% loc slack %}</a></div>-->
+            </div>
+          </li>
         </ol>
 
         <div id="menu-expand">
@@ -87,6 +86,6 @@
     
     {% include footer.html %}
 
-    {% js _themes/javascript/c968aa306f6eb7ab8b4a.conceptual.js %}
+    {% js _themes/javascript/ccb5d95bcacbe45c0f4d.conceptual.js %}
   </body>
 </html>

@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="ms.pagetype" content="restapi" />
-    <meta name="ms.sitename" content="DOCS" />
     {{ metadata }}
     <title>{{ page.title }}</title>
-    {% style _themes/css/c968aa306f6eb7ab8b4a.restapi.css %}
+    {% style _themes/css/ccb5d95bcacbe45c0f4d.restapi.css %}
   </head>
   <body>
 
@@ -20,14 +18,17 @@
       </div>
 
       <!-- Content -->
-      <div id="main" class="reference-body" ms.pgarea="body">
-          <article id="main-content" class="reference-content">
-              {{ content }}
-          </article>
+      <div class="reference-body-outer">
+        <div id="main" class="reference-body" ms.pgarea="body">
+            <article id="main-content" class="reference-content">
+                {{ content }}
+            </article>
+        </div>
       </div>
     </div>
 
-    <div id="openFeedbackContainer" class="openfeedback-container" style="position: absolute;"></div>
-    {% js _themes/javascript/c968aa306f6eb7ab8b4a.rest.js %}
+    <div id="openFeedbackContainer" class="openfeedback-container footer-layout"></div>
+    {% include footer.html %}
+    {% js _themes/javascript/ccb5d95bcacbe45c0f4d.rest.js %}
   </body>
 </html>

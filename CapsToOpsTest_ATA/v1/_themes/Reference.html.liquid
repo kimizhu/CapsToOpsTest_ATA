@@ -3,11 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="ms.pagetype" content="reference" />
-    <meta name="ms.sitename" content="DOCS" />
     {{ metadata }}
     <title>{{ page.title }}</title>
-    {% style _themes/css/c968aa306f6eb7ab8b4a.reference.css %}
+    {% style _themes/css/ccb5d95bcacbe45c0f4d.reference.css %}
   </head>
   <body>
 
@@ -19,83 +17,84 @@
         <nav class="navigation"></nav>
       </div>
 
-      <!-- Content -->
-      <div id="main" class="reference-body" ms.pgarea="body">
-        <nav class="navbar reference-nav">
-          <ul class="navbar-left" ms.cmpgrp="social">
-            <li class="navbar-item">
-              <a href="{{ page.content_git_url }}" class="button is-primary is-small"><i class="icon icon-edit"></i>{% loc edit %}</a>
-            </li>
-            <li class="navbar-item">
-              <a href="{{ page.source_url}}" class="button is-primary is-small"><i class="icon icon-code"></i>{% loc view.source %}</a>
-            </li>
-            <li class="navbar-item">
-              <a href="#" class="button is-primary is-small sharebutton"><i class="icon icon-share"></i>{% loc share %}</a>
-            </li>
-          </ul>
-          <div class="navbar-left" ms.cmpgrp="reference menu">
-            <!-- Platform Selector -->
-            {% if page.platforms != null %}
-            <div class="navbar-item">
-              <p class="control is-horizontal">
-                <label for="platform-selector" class="label">{% loc platform %}</label>
-                <span class="select">
-                  <select name="platform-selector" id="platform-selector">
-                  {% for platform in page.platforms %}
-                    <option value="platform-{{ platform }}">{{ platform }}</option>
-                  {% endfor %}
-                  </select>
-                </span>
-              </p>
+      <div class="reference-body-outer">
+        <!-- Content -->
+        <div id="main" class="reference-body" ms.pgarea="body">
+          <nav class="navbar reference-nav">
+            <ul class="navbar-left" ms.cmpgrp="social">
+              <li class="navbar-item">
+                <a href="{{ page.content_git_url }}" class="button is-primary is-small"><i class="icon icon-edit"></i>{% loc edit %}</a>
+              </li>
+              {% if page.source_url != null and page.source_url != blank %}
+              <li class="navbar-item">
+                <a href="{{ page.source_url}}" class="button is-primary is-small"><i class="icon icon-code"></i>{% loc view.source %}</a>
+              </li>
+              {% endif %}
+              <li class="navbar-item">
+                <a href="#" class="button is-primary is-small sharebutton"><i class="icon icon-share"></i>{% loc share %}</a>
+              </li>
+            </ul>
+            <div class="navbar-left" ms.cmpgrp="reference menu">
+              <!-- Platform Selector -->
+              {% if page.platforms != null %}
+              <div class="navbar-item">
+                <p class="control is-horizontal">
+                  <label for="platform-selector" class="label">{% loc platform %}</label>
+                  <span class="select">
+                    <select name="platform-selector" id="platform-selector">
+                    {% for platform in page.platforms %}
+                      <option value="platform-{{ platform }}">{{ platform }}</option>
+                    {% endfor %}
+                    </select>
+                  </span>
+                </p>
+              </div>
+              {% endif %}
+              <!-- Language Selector -->
+              {% if page.langs != null %}
+              <div class="navbar-item">
+                <p id="menu-lang" class="control is-horizontal">
+                  <label for="lang-selector" class="label">{% loc language %}</label>
+                  <span class="select">
+                    <select name="lang-selector" id="lang-selector">
+                    {% for lang in page.langs %}
+                      <option value="lang-{{ lang }}">{{ lang }}</option>
+                    {% endfor %}
+                    </select>
+                  </span>
+                </p>
+              </div>
+              {% endif %}
+              <!-- Theme Selector -->
+              <div class="navbar-item">
+                <p id="menu-theme" class="control is-horizontal">
+                  <label for="theme-selector" class="label">{% loc theme %}</label>
+                  <span class="select">
+                    <select name="theme-selector" id="theme-selector">
+                      <option value="">{% loc theme.light %}</option>
+                      <option value="theme-night">{% loc theme.dark %}</option>
+                    </select>
+                  </span>
+                </p>
+              </div>
             </div>
-            {% endif %}
-            <!-- Language Selector -->
-            {% if page.langs != null %}
-            <div class="navbar-item">
-              <p id="menu-lang" class="control is-horizontal">
-                <label for="lang-selector" class="label">{% loc language %}</label>
-                <span class="select">
-                  <select name="lang-selector" id="lang-selector">
-                  {% for lang in page.langs %}
-                    <option value="lang-{{ lang }}">{{ lang }}</option>
-                  {% endfor %}
-                  </select>
-                </span>
-              </p>
-            </div>
-            {% endif %}
-            <!-- Theme Selector -->
-            <div class="navbar-item">
-              <p id="menu-theme" class="control is-horizontal">
-                <label for="theme-selector" class="label">{% loc theme %}</label>
-                <span class="select">
-                  <select name="theme-selector" id="theme-selector">
-                    <option value="">{% loc theme.light %}</option>
-                    <option value="theme-night">{% loc theme.dark %}</option>
-                    <option value="theme-hot-dog">{% loc theme.hotdog %}</option>
-                  </select>
-                </span>
-              </p>
-            </div>
+          </nav>
+
+          <div class="share-container">
+            <div><a href="" class="share-twitter"><i class="icon icon-twitter"></i>{% loc twitter %}</a></div>
+            <div><a href="" class="share-facebook"><i class="icon icon-facebook"></i>{% loc facebook %}</a></div>
+            <!--<div><a href="" class="share-slack"><i class="icon icon-slack"></i>{% loc slack %}</a></div>-->
           </div>
-        </nav>
 
-        <div class="share-container">
-          <li><a href="" class="share-twitter"><i class="icon icon-twitter"></i>{% loc twitter %}</a></li>
-          <li><a href="" class="share-facebook"><i class="icon icon-facebook"></i>{% loc facebook %}</a></li>
-          <!--<li><a href="" class="share-slack"><i class="icon icon-slack"></i>{% loc slack %}</a></li>-->
+          <article id="main-content" class="reference-content">
+          {{ content }}
+          </article>
         </div>
-
-        <article id="main-content" class="reference-content">
-        {{ content }}
-        </article>
       </div>
     </div>
+    <div id="openFeedbackContainer" class="openfeedback-container footer-layout"></div>
 
-
-    <div id="openFeedbackContainer" class="openfeedback-container" style="position: absolute;"></div>
-
-    {% js _themes/javascript/c968aa306f6eb7ab8b4a.reference.js %}
-
+    {% include footer.html %}
+    {% js _themes/javascript/ccb5d95bcacbe45c0f4d.reference.js %}
   </body>
 </html>

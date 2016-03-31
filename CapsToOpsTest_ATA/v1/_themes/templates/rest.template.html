@@ -54,9 +54,10 @@
             />
         </template>
     </p>
-    <p class="error error-label" v-show="!model.validation.isValid">
-        {{model.validation.message}}
-    </p>
+    <div class="control is-horizontal columns">
+        <div class="column is-3 label"></div>
+        <p class="column is-9 error error-label" v-show="!model.validation.isValid">{{model.validation.message}}</p>
+    </div>
 </script>
 
 <script type="x-template" id="input-select">
@@ -73,7 +74,8 @@
             </option>
         </select>
     </p>
-    <p class="error error-label" v-show="!model.validation.isValid">
-        {{model.validation.message}}
-    </p>
+    <div class="control is-horizontal columns">
+        <div class="column is-3 label"></div>
+        <p class="column is-9 error error-label" v-show="!model.validation.isValid">{{model.validation.message}}</p>
+    </div>
 </script>

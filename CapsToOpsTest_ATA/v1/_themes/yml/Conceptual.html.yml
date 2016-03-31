@@ -3,8 +3,6 @@
   name: Light
 - uid: theme.dark
   name: Dark
-- uid: theme.hotdog
-  name: Hot Dog
 - uid: comments
   name: Comments
 - uid: edit

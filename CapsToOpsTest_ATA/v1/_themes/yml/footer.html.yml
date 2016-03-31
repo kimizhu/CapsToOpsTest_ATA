@@ -3,6 +3,8 @@
   name: Privacy Statement
 - uid: terms.of.use
   name: Terms of Use
+- uid: impressum.text
+  name: Impressum
 - uid: trademarks
   name: Trademarks
 ---

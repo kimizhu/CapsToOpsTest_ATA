@@ -1,4 +1,10 @@
 ---
 - uid: microsoft
   name: Microsoft
+- uid: cookie.consent.europe
+  name: By using this site you consent to cookies for analysis, relevance and advertising
+- uid: readmore
+  name: Read more
+- uid: close
+  name: close
 ---
